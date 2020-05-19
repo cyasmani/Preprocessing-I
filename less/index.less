@@ -26,9 +26,10 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section{
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -52,8 +53,85 @@ table {
 * {
     box-sizing: border-box;
 }
+.notofont {
+	font-family: 'Noto Serif', serif;
+}
+
+.flexing{
+	display:flex;
+	justify-content: center;
+	
+}
+
+.stylenav {
+	width:50rem;
+	height:5rem;
+	background-color: black;
+
+}
+
+.stylelinks {
+	
+	margin: 2rem;
+	color:white;
+	font-size: 1.4rem;
+}
+
+.stylecontainer {
+	.flexing();
+	margin-top: 1rem;
+	width: 60rem;
+	height: 35rem;
+	background-color: rgb(196, 196, 196);
+}
+
+.h2styling {
+	font-size: 4.6rem;
+	.notofont();
+	margin-top: 1rem;
+	margin-left:1rem;
+
+}
+
 
 html, body {
-    height: 100%;
+	height: 100%;
+
 }
+
+	header{
+		.flexing();
+	}
+
+		.nav-container{
+			.stylenav();
+
+			}
+
+
+			nav a {
+				font-family: .notofont();
+				text-decoration: none;
+				.stylelinks();
+				}
+	section{
+		.flexing();
+	}
+		.container{
+
+			.stylecontainer();
+			justify-content: flex-start;
+		}
+
+			img{
+				margin-top: 1rem;
+				margin-left: 1rem;
+				width:22rem;
+				height:18rem;
+			}
+
+			h2{
+				.h2styling();
+
+			}
 
