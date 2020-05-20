@@ -156,10 +156,14 @@ table {
   background-color: #c4c4c4;
 }
 .h2styling {
-  font-size: 4.6rem;
+  font-size: 2.8rem;
   font-family: 'Noto Serif', serif;
-  margin-top: 1rem;
   margin-left: 1rem;
+  margin-top: 5rem;
+}
+.break-line {
+  flex-basis: 100%;
+  width: 0;
 }
 html,
 body {
@@ -193,16 +197,128 @@ section {
   height: 35rem;
   background-color: #c4c4c4;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 img {
   margin-top: 1rem;
   margin-left: 1rem;
   width: 22rem;
-  height: 18rem;
+  height: 15rem;
 }
 h2 {
-  font-size: 4.6rem;
+  font-size: 2.8rem;
   font-family: 'Noto Serif', serif;
-  margin-top: 1rem;
   margin-left: 1rem;
+  margin-top: 5rem;
+}
+p {
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  font-family: 'Noto Serif', serif;
+}
+#line {
+  margin-bottom: 1rem;
+  color: #b3b3b3;
+  margin-left: 1.5rem;
+}
+.break {
+  flex-basis: 100%;
+  width: 0;
+}
+.button {
+  margin-left: 10rem;
+  width: 6rem;
+  height: 2rem;
+  color: blue;
+}
+/*--Out of container*/
+section {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2rem;
+}
+.text-header {
+  font-size: 1.5rem;
+}
+.text {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text-container2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 2rem;
+}
+.text-list {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+/*Beginning of Table Element*/
+.table-section {
+  display: flex;
+  justify-content: flex-start;
+}
+.table-container {
+  width: 90%;
+  height: 20rem;
+  border: 3px solid black;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+table {
+  border-spacing: 3rem;
+  width: 100%;
+}
+caption {
+  font-family: 'Noto Serif', serif;
+  font-size: 2rem;
+}
+th {
+  border: 3px solid black;
+  margin: 3rem;
+}
+td {
+  padding: 2rem;
+}
+.table-section .table-container table tr {
+  background-color: #b6b6b6;
+}
+.table-section .table-container table tr + tr {
+  background-color: white;
+}
+.table-section .table-container table tr + tr + tr {
+  background-color: #bdbbbb;
+}
+.table-section .table-container table tr + tr + tr + tr {
+  background-color: white;
+}
+/*footer */
+footer {
+  display: flex;
+  justify-content: center;
+}
+.bottom-container {
+  width: 50rem;
+  height: 5rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.bottom-container p {
+  color: white;
 }
