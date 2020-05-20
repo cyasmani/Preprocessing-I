@@ -322,3 +322,41 @@ footer {
 .bottom-container p {
   color: white;
 }
+@media (max-width: 504px) {
+  .container {
+    height: 45rem;
+  }
+  nav a {
+    margin: 0 auto;
+    border: 1rem solid black;
+  }
+  #line {
+    color: #b3b3b3;
+  }
+  .paragraph {
+    margin-bottom: 2rem;
+  }
+  .text-container {
+    border: none;
+  }
+  .text-container2 {
+    border: none;
+  }
+  .text {
+    line-height: 1.6rem;
+  }
+  .text-list {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+  }
+  .table-section {
+    width: 100%;
+    border: none;
+    margin-right: 3rem;
+  }
+  .table-container {
+    border: none;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+}

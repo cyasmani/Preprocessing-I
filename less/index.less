@@ -53,6 +53,8 @@ table {
 * {
     box-sizing: border-box;
 }
+
+@paper:white;
 .notofont {
 	font-family: 'Noto Serif', serif;
 }
@@ -155,10 +157,6 @@ html, body {
 				margin-left:1.5rem;
 			}
 
-			.paragraph {
-
-				
-			}
 
 			.break{
 				.break-line();
@@ -221,78 +219,135 @@ section {
 
 /*Beginning of Table Element*/
 
-.table-section{
+	.table-section{
 
-	display:flex;
-	justify-content: flex-start;
-}
+		display:flex;
+		justify-content: flex-start;
+	}
+
+		.table-container{
+
+			width:90%;
+			height: 20rem;
+			border:3px solid black;
+			margin-left:4rem;
+			margin-top: 2rem;
+		}
+			table{
+				border-spacing: 3rem;
+				width:100%;
+				
+		
+			}
+
+			caption{
+
+				.notofont();
+				font-size: 2rem;
+			}
+
+			th{
+				border: 3px solid black;
+				margin:3rem;
+
+			}
+
+			td{
+
+				padding:2rem;
+			}
+
+			.table-section .table-container table tr{
+				background-color: rgb(182, 182, 182);
+			}
+
+			.table-section .table-container table tr + tr{
+				background-color:white;
+			}
+
+			.table-section .table-container table tr + tr + tr{
+				background-color:rgb(189, 187, 187);
+			}
+
+			.table-section .table-container table tr + tr + tr + tr{
+				background-color:white;
+			}
+	/*footer */
+
+	footer{
+
+		.flexing();
+
+
+	}
+		.bottom-container{
+			.stylenav();
+			.flexing();
+			margin-top: 1rem;
+		}
+
+			.bottom-container p{
+				
+				color:@paper;
+			}
+@media(max-width: 504px){
+
+	.container{
+		height:45rem;
+	}
+
+	nav a {
+		margin:0 auto;
+		border:1rem solid black;
+		
+	}
+
+	#line{
+		
+		color: rgb(179, 179, 179);
+		
+	}
+
+	.paragraph{
+		margin-bottom: 2rem;
+	}
+
+	.text-container{
+		border:none;
+	}
+
+	.text-container2{
+		border:none;
+	}
+
+	.text{
+
+		line-height: 1.6rem;
+	}
+
+	.text-list{
+
+		margin-left: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.table-section{
+		width:100%;
+		border:none;
+		margin-right:3rem;
+
+	}
 
 	.table-container{
-
-		width:90%;
-		height: 20rem;
-		border:3px solid black;
-		margin-left:4rem;
-		margin-top: 2rem;
+		border:none;
+		margin-left: 2rem;
+		margin-bottom: 2rem;
 	}
-		table{
-			border-spacing: 3rem;
-			width:100%;
-			
-	
-		}
 
-		caption{
 
-			.notofont();
-			font-size: 2rem;
-		}
-
-		th{
-			border: 3px solid black;
-			margin:3rem;
-
-		}
-
-		td{
-
-			padding:2rem;
-		}
-
-		.table-section .table-container table tr{
-			background-color: rgb(182, 182, 182);
-		}
-
-		.table-section .table-container table tr + tr{
-			background-color:white;
-		}
-
-		.table-section .table-container table tr + tr + tr{
-			background-color:rgb(189, 187, 187);
-		}
-
-		.table-section .table-container table tr + tr + tr + tr{
-			background-color:white;
-		}
-/*footer */
-
-footer{
-
-	.flexing();
 
 
 }
-	.bottom-container{
-		.stylenav();
-		.flexing();
-		margin-top: 1rem;
-	}
-
-		.bottom-container p{
-			
-			color:white;
-		}
-
 
 
 		
