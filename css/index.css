@@ -322,7 +322,7 @@ footer {
 .bottom-container p {
   color: white;
 }
-@media (max-width: 504px) {
+@media (max-width: 500px) {
   .container {
     height: 45rem;
   }
